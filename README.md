@@ -33,21 +33,29 @@ It wrote the code, ran away, and now the game is unplayable.
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. Game state starts witha secret value of 93
+2. User enters a guess of 36
+3. Game returns "Too Low"
+4. User enters a guess of 100, game returns "Too High"
+5. Score updates correctly after each guess
+6. Game ends after the user correctly guesses 93
 
-**Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
+**Screenshot** *(optional)*: 
+![alt text](image.png)
 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
-```
+(.venv) ➜  ai110-module1show-gameglitchinvestigator-starter git:(main) ✗ pytest
+================================================================== test session starts ===================================================================
+platform darwin -- Python 3.11.3, pytest-9.1.1, pluggy-1.6.0
+rootdir: /Users/adrianlujo/aiproj2/ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.14.1
+collected 5 items                                                                                                                                        
+
+test_game_logic.py .....                                                                                                                           [100%]
+
+=================================================================== 5 passed in 0.01s =======================================================
 
 ## 🚀 Stretch Features
 
